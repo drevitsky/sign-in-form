@@ -1,0 +1,223 @@
+
+/*Sign-in-form*/
+
+
+* {
+	box-sizing: border-box;
+}
+
+
+
+
+html {
+	height: 100%;
+	font-size: 10px;
+}
+body{
+	
+	font-family: 'Quicksand', sans-serif;
+	
+	min-height: 100%;
+	background-color: #fff;
+	color: #fff;
+
+}
+
+	.form {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background-image: url('../img/fon-bridge.png'), linear-gradient(to top right,	#3023ae, #c46bd6) ;
+			background-repeat: no-repeat;
+			background-position: center;
+		background-size: cover;
+
+		width: 400px;
+		
+		font-size: 1.6rem;	
+		padding: 50px 70px;
+		
+		box-shadow: 0 0 1px 0 #23ae92,0 30px 60px 0 rgba(0, 0, 0, 0.7);
+		
+		
+	}
+.form_head {
+
+	font-size: 1.8rem;
+	font-weight: 700;
+	line-height: 1.5;
+	
+	margin-bottom: 50px; 
+
+}
+.form_head .form__link {
+
+color: #fff;
+text-decoration: none;
+margin-right: 20px; 
+padding-bottom: 4px;
+opacity: 0.7;
+}
+
+.form_head .form__link:focus {
+	border-bottom:  2px solid #e66a64;
+	
+	
+}
+.form_head .form__link:hover{
+	
+	opacity: 1;
+	
+}
+
+.form_body {
+
+	color: #9eabad;
+	padding: 25px;
+}
+label {
+	display: block;
+	margin-bottom: 6px;
+	font-weight: 700; 
+}
+
+
+
+
+.body__input {
+	
+	border: 2px solid rgba(208, 209, 220, 0.5);
+	padding: 0.5em 0.5em;
+	background: transparent;
+	width: 100%;
+	margin-bottom: 15px;
+	caret-color: #e66a64;
+}
+
+
+
+
+.btn {
+
+	width: 100%;
+	color: #fff;
+	font-size: 1.8rem;
+	background-color: #23ae92;
+	padding:  0.6em;
+	font-weight: 700;
+	border: none;
+	margin-bottom: 23px;
+}
+.btn:hover,
+.btn:focus {
+	background-color: rgba(208, 209, 220, 0.5);
+	
+}
+
+.body_text {
+
+	margin-top: 25px;
+}
+.body_text--sm {
+	font-size: 1.2rem;
+
+
+}
+
+.form__foot {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+
+
+}
+.form__foot .form__link {
+
+	font-size: 1.3rem;
+	color: #fff;
+
+}
+
+
+
+
+
+input:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+
+input:focus {
+	outline: none;
+	border-color:#23ae92;
+	/* background-color: transparent; */
+	background-color: rgba(255, 255, 255, 0.3);
+}
+/* .label__checkbox {
+
+	font-size: 1.3rem;
+	 
+	vertical-align: center;
+}
+.input__checkbox {
+	 display: none;
+	zoom: 1.5;
+	border: none;
+	outline: none;
+	color: #fff;
+
+	margin-right: 4px; 
+} */
+.checkbox {
+	position:relative;
+	padding-left:25px;
+	font-size: 1.3rem;
+}
+.checkbox input[type=checkbox] {
+	display:none;
+}
+.checkbox label:after {
+	content:'';
+	display:block;
+	height:14px;
+	width:14px;
+	
+	font-size: 1.3rem;
+	outline:1px solid #939598;
+	position:absolute;
+	top:0;
+	left:0;
+}
+.checkbox input[type=checkbox]:checked + label:after {
+	content:'';
+
+	outline:none;
+	
+
+	background-color:#23ae92;
+	background-image: url('../img/check.png');
+	background-repeat: no-repeat;
+			background-position: center;
+	
+	
+}
+.label__check {
+
+	margin-bottom: 42px;
+}
+.checkbox label:hover:after { 
+	content:'';
+
+	background-color: rgba(255, 255, 255, .1);
+}
+.form__foot .form__link:hover,
+.form__foot .form__link:focus {
+
+	color:#23ae92;
+	opacity: 0.7;
+}
